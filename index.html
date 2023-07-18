@@ -19,10 +19,10 @@
                 <a href="#">
                     Inicio
                 </a>
-                <a href="#">
+                <a href="#epoca">
                     Épocas
                 </a>
-                <a href="#">
+                <a href="#timeline">
                     Timeline
                 </a>
             </div>
@@ -52,11 +52,11 @@
 
         <section class="torre-eiffel">
         </section>
-        <section class="seccion-epoca">
+        <section class="seccion-epoca" id="epoca">
             <h3>Selecciona una época</h3>
             <h1>Elige tu propia aventura temporal</h1>
             <div class="epocas">
-                <a href="#" class="card-epoca">
+                <a href="antiguo-egipto.html" class="card-epoca">
                     <img src="public/images/antiguo-egipto.png" alt="">
                     <h3>Antiguo Egipto</h3>
                     <p>Sumérgete en la fascinante civilización del Nilo</p>
@@ -99,11 +99,13 @@
                 </a>
             </div>
         </section>
-        <section class="seccion-timeline">
+        <section class="seccion-timeline" id="timeline">
             <img src="public/images/astronauta.png" alt="">
             <h3>Disfruta de la línea de tiempo</h3>
             <h1>¡Prepárate para el viaje!</h1>
-            <button>¡Empecemos!</button>
+            <label for="check">¡Empecemos!</label>
+            <input type="checkbox" name="check" id="check">
+            <div class="test"></div>
             <div class="timeline">
                 <div class="card-timeline">
                     <h3>3100 a.C. - 30 a.C.</h3>
@@ -112,12 +114,60 @@
                     <p>Auge del antiguo imperio, construcción de las pirámides, faraones y la vida cotidiana en el Nilo.
                     </p>
                 </div>
+                <div class="card-timeline">
+                    <h3> 800 a.C. - 146 a.C.</h3>
+                    <img src="public/images/grecia-clasica.png" alt="">
+                    <h1>Grecia Clásica</h1>
+                    <p>Desarrollo de la democracia, filosofía, teatro, Juegos Olímpicos y los imperios de Atenas y
+                        Esparta.
+                    </p>
+                </div>
+                <div class="card-timeline">
+                    <h3>27 a.C. - 476 d.C.</h3>
+                    <img src="public/images/imperio-romano.png" alt="">
+                    <h1>Imperio Romano</h1>
+                    <p>Expansión territorial, gobierno republicano e imperial, derecho romano, construcción de obras
+                        arquitectónicas emblemáticas.
+                    </p>
+                </div>
+                <div class="card-timeline">
+                    <h3>476 d.C. - 1453 d.C.</h3>
+                    <img src="public/images/edad-media.png" alt="">
+                    <h1>Edad Media</h1>
+                    <p>Feudalismo, reinos y señores feudales, caballeros, cruzadas, la peste negra y la consolidación de
+                        la Iglesia Católica.
+                    </p>
+                </div>
+                <div class="card-timeline">
+                    <h3>siglos XIV-XVI</h3>
+                    <img src="public/images/renacimiento.png" alt="">
+                    <h1>Renacimiento</h1>
+                    <p>Renovación cultural, arte y ciencia, descubrimientos geográficos, como el viaje de Colón a
+                        América, y figuras como Leonardo da Vinci y Miguel Ángel.
+                    </p>
+                </div>
+                <div class="card-timeline">
+                    <h3>siglos XVIII-XIX</h3>
+                    <img src="public/images/revolucion-industrial.png" alt="">
+                    <h1>Revolución Industrial</h1>
+                    <p>Cambios radicales en la producción y la sociedad con la mecanización, el desarrollo de la máquina
+                        de vapor y la urbanización masiva.
+                    </p>
+                </div>
+                <div class="card-timeline">
+                    <h3>1837-1901</h3>
+                    <img src="public/images/epoca-victoriana.png" alt="">
+                    <h1>Época Victoriana</h1>
+                    <p>Dominio del Reino Unido bajo la reina Victoria, expansión colonial, avances tecnológicos y
+                        sociales, como la Revolución Industrial y la lucha por los derechos de la mujer.
+                    </p>
+                </div>
             </div>
         </section>
         <footer>
             <p>Para más contenido, búscanos en redes sociales</p>
             <div class="logos">
-                <a href="#">
+                <a href="https://facebook.com">
                     <img src="public/images/logo-facebook.svg" alt="">
                 </a>
                 <a href="#">

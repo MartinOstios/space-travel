@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -168,7 +169,7 @@ header {
 
 .seccion-epoca>h1 {
     color: #000;
-    width: 30%;
+    width: 50%;
     text-align: center;
     font-family: Noto Serif;
     font-size: 48px;
@@ -229,11 +230,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .seccion-timeline>h3 {
     color: #D3A327;
     font-family: Dancing Script;
+    text-align: center;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -254,7 +257,7 @@ header {
     /* 93.75% */
 }
 
-.seccion-timeline>button {
+.seccion-timeline>label {
     background-color: #F26DAA;
     border-style: solid;
     border-radius: 12px;
@@ -270,15 +273,24 @@ header {
     cursor: pointer;
     transition: opacity .4s;
     opacity: 1;
+    margin-bottom: 1000px;
 }
 
-.seccion-timeline>button:hover {
+#check{
+    display: none;
+}
+
+.seccion-timeline>label:hover {
     opacity: 0.9;
 }
 
 .timeline {
-    margin-top: 119px;
-    margin-bottom: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    left: -1050%;
+    bottom: 350px;
+    gap: 300px;
 }
 
 .card-timeline {
@@ -286,7 +298,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    width: 450px;
+    padding-bottom: 80px;
 }
 
 .card-timeline>h3 {
@@ -326,7 +339,7 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 40%;
+    width: 80%;
     margin-top: 19px;
 }
 
@@ -345,6 +358,7 @@ footer>p {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 44px;
+    text-align: center;
 }
 
 footer>span {
@@ -361,4 +375,151 @@ footer>span {
 .logos {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+
+/*
+Parte responsive
+*/
+
+@media screen and (width < 750px) {
+
+    /*Navbar*/
+    header {
+        flex-direction: column;
+        gap: 20px;
+        width: 95%;
+        padding: 10px;
+    }
+
+    .seccion-reloj>img {
+        width: 60%;
+    }
+
+    .seccion-reloj {
+        flex-direction: column;
+    }
+
+    .texto-reloj {
+        width: 100%;
+    }
+
+    .texto-reloj>p {
+        font-size: 18px;
+    }
+
+    .texto-reloj>h2 {
+        font-size: 36px;
+    }
+
+    .landing>p {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .seccion-epoca>h1 {
+        width: 70%;
+        font-size: 36px;
+    }
+
+    .seccion-epoca>h3 {
+        font-size: 28px;
+    }
+
+    .seccion-timeline>h1 {
+        width: 80%;
+        font-size: 36px;
+    }
+
+    .seccion-timeline>h3 {
+        font-size: 28px;
+    }
+
+    .seccion-timeline>img {
+        width: 80%;
+    }
+    .card-timeline{
+        width: 300px;
+    }
+
+    .card-timeline>p {
+        width: 100%;
+    }
+
+    footer>p {
+        font-size: 14px;
+    }
+
+    footer>span {
+        font-size: 12px;
+    }
+
+}
+
+
+/*
+Parte animaciones
+*/
+
+
+#check:checked ~ .timeline{
+    animation-name: timeline;
+    animation-duration: 70s;
+    animation-timing-function: linear;
+}
+
+@keyframes timeline{
+    0%{
+        left: -1050%;
+    }
+    4%{
+        left: -950%;
+    }
+    12%{
+        left: -950%;
+    }
+    16%{
+        left: -790%;
+    }
+    24%{
+        left: -790%;
+    }
+    28%{
+        left: -630%;
+    }
+    36%{
+        left: -630%;
+    }
+    40%{
+        left: -468%;
+    }
+    48%{
+        left: -468%;
+    }
+    52%{
+        left: -310%;
+    }
+    60%{
+        left: -310%;
+    }
+    64%{
+        left: -148%;
+    }
+    72%{
+        left: -148%;
+    }
+    76%{
+        left: 10%;
+    }
+    84%{
+        left: 10%;
+    }
+    88%{
+        left: 164%;
+    }
+    100%{
+        left: 164%;
+    }
 }

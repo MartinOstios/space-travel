@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Mono:wght@300;400;500&family=Noto+Serif:wght@100;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    background-image: url(images/background-secciones.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+}
+
+div {
+    display: flex;
+    width: 80%;
+    gap: 40px;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: Noto Serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    margin-top: 120px;
+    margin-bottom: 97px;
+    /* 93.75% */
+}
+
+p {
+    color: #000746;
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+a {
+    background-color: #F26DAA;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #F7B6D0;
+    color: #FFF;
+    font-family: IBM Plex Mono;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 26px 7px 26px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity .4s;
+    opacity: 1;
+    margin-bottom: 50px;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+@media screen and (width < 750px){
+    div{
+        flex-direction: column-reverse;
+    }
+    h1{
+        margin-top: 20px;
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}
